@@ -1,0 +1,45 @@
+{
+  "scope_start_inclusive": "2017-01-01",
+  "scope_end_exclusive": "2018-09-01",
+  "scoped_orders": 99092,
+  "delivered_orders": 96211,
+  "delivered_distinct_customers": 93104,
+  "merchandise_sales_brl": 13181027.13,
+  "aov_brl": 137.0,
+  "seller_count_with_delivered_item_sales": 2945,
+  "seller_count_dataset": 3095,
+  "seller_count_e7_min_30": 625,
+  "seller_order_rows_attribution": 97549,
+  "seller_order_attribution_overlaps_market_orders": true,
+  "orders_with_multiple_source_reviews": 547,
+  "invalid_review_score_rows": 0,
+  "delivered_orders_missing_actual_delivery_date": 8,
+  "delivered_orders_missing_estimated_delivery_date": 0,
+  "candidate_key_duplicate_rows": {
+    "customers_customer_id": 0,
+    "orders_order_id": 0,
+    "items_order_item_id": 0,
+    "payments_order_sequence": 0,
+    "sellers_seller_id": 0,
+    "products_product_id": 0,
+    "translation_category": 0
+  },
+  "unmatched_foreign_key_rows": {
+    "orders_customer": 0,
+    "items_order": 0,
+    "items_seller": 0,
+    "items_product": 0,
+    "payments_order": 0,
+    "reviews_order": 0
+  },
+  "late_rate_denominator_orders": 97541,
+  "late_order_count_attributed": 6544,
+  "top_5_customer_states": [
+    "SP",
+    "RJ",
+    "MG",
+    "RS",
+    "PR"
+  ],
+  "note": "Sales are attributed to the seller at item grain. Seller order and service counts overlap when orders contain multiple sellers."
+}

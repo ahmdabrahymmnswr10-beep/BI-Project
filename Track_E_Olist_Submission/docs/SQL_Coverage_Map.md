@@ -1,0 +1,16 @@
+# SQL coverage map
+
+| Topic | Question ID | SQL filename | Brief explanation |
+|---|---|---|---|
+| Joins: meaningful 3+ table join | E4, E7, O1, O2 | sql/03_analysis.sql | Connect seller/item/order/customer and product/category evidence at the declared grain. |
+| LEFT JOIN preserving unmatched records | G3, E7, O1 | sql/03_analysis.sql | Keep missing payments/reviews and untranslated categories visible. |
+| Advanced pattern: two-sided period compare | E6 | sql/03_analysis.sql | Compare both periods across the full seller master, retaining sellers inactive in either or both periods. |
+| Scalar subquery | G1, E1 | sql/03_analysis.sql | Overall scoped order denominator and marketplace sales denominator. |
+| Multi-row subquery | E4 | sql/03_analysis.sql | IN (SELECT TOP 5 customer states by item sales). |
+| Derived table with stated grain | E7 | sql/03_analysis.sql | SellerOrderItems has one row per seller-order before outcomes are attached. |
+| Correlated subquery | E3 | sql/03_analysis.sql | Each seller is compared with the active-seller mean for its state. |
+| EXISTS and NOT EXISTS | G3, E5 | sql/03_analysis.sql | Review coverage and mutually meaningful seller review segments. |
+| CTE: multiple analytical stages | G2, E7 | sql/03_analysis.sql | Build month series, monthly totals, trends, and seller-order signals. |
+| Ranking window function | E1, E2, O1, O2 | sql/03_analysis.sql | Rank sellers, seller months, categories, and seller customers. |
+| LAG/LEAD | G2, E2 | sql/03_analysis.sql | Prior-month marketplace and seller sales. |
+| Aggregate window | G2, O1, O2 | sql/03_analysis.sql | Running sales and seller total sales alongside ranked group values. |

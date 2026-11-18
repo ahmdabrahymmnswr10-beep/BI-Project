@@ -1,0 +1,4 @@
+review_segment,seller_count,eligible_orders,valid_review_orders,low_rating_orders
+At least one low-rated order,1676,92604,91976,12867
+No valid reviews,4,4,0,0
+Rated orders; no low rating,1265,4941,4916,0

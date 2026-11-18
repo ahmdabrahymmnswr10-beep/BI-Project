@@ -1,0 +1,149 @@
+﻿result_file,field,description
+Dashboard_month_state.csv,purchase_month,Purchase month from the question's defined population and grain.
+Dashboard_month_state.csv,seller_state,Seller state (Brazil UF).
+Dashboard_month_state.csv,sales_brl,Sales brl from the question's defined population and grain.
+Dashboard_month_state.csv,active_sellers,Active sellers from the question's defined population and grain.
+Dashboard_month_state.csv,seller_orders,Seller orders from the question's defined population and grain.
+Dashboard_seller_period.csv,seller_id,Seller identifier; string key.
+Dashboard_seller_period.csv,seller_state,Seller state (Brazil UF).
+Dashboard_seller_period.csv,eligible_orders,Distinct delivered seller-order observations in scope; overlaps where orders have multiple sellers.
+Dashboard_seller_period.csv,sales_brl,Sales brl from the question's defined population and grain.
+Dashboard_seller_period.csv,freight_brl,Freight brl from the question's defined population and grain.
+Dashboard_seller_period.csv,late_orders,Seller-order observations delivered after estimated calendar date.
+Dashboard_seller_period.csv,valid_delivery_date_orders,Seller-order denominator with actual and estimated delivery dates.
+Dashboard_seller_period.csv,valid_review_orders,Seller-order observations with one selected valid review score.
+Dashboard_seller_period.csv,low_rating_orders,Seller-order observations with selected review score 1 or 2.
+Dashboard_seller_period.csv,period,Period from the question's defined population and grain.
+Dashboard_seller_period.csv,late_delivery_rate,late_orders / valid_delivery_date_orders.
+Dashboard_seller_period.csv,freight_to_sales_ratio,Sum freight / sum item prices for the same seller-order population.
+Dashboard_seller_period.csv,review_coverage,valid_review_orders / eligible_orders.
+Dashboard_seller_period.csv,low_rating_rate,low_rating_orders / valid_review_orders.
+Dashboard_seller_scorecard.csv,seller_id,Seller identifier; string key.
+Dashboard_seller_scorecard.csv,seller_state,Seller state (Brazil UF).
+Dashboard_seller_scorecard.csv,eligible_orders,Distinct delivered seller-order observations in scope; overlaps where orders have multiple sellers.
+Dashboard_seller_scorecard.csv,sales_brl,Sales brl from the question's defined population and grain.
+Dashboard_seller_scorecard.csv,freight_brl,Freight brl from the question's defined population and grain.
+Dashboard_seller_scorecard.csv,late_orders,Seller-order observations delivered after estimated calendar date.
+Dashboard_seller_scorecard.csv,valid_delivery_date_orders,Seller-order denominator with actual and estimated delivery dates.
+Dashboard_seller_scorecard.csv,valid_review_orders,Seller-order observations with one selected valid review score.
+Dashboard_seller_scorecard.csv,low_rating_orders,Seller-order observations with selected review score 1 or 2.
+Dashboard_seller_scorecard.csv,late_delivery_rate,late_orders / valid_delivery_date_orders.
+Dashboard_seller_scorecard.csv,freight_to_sales_ratio,Sum freight / sum item prices for the same seller-order population.
+Dashboard_seller_scorecard.csv,review_coverage,valid_review_orders / eligible_orders.
+Dashboard_seller_scorecard.csv,low_rating_rate,low_rating_orders / valid_review_orders.
+Dashboard_seller_scorecard.csv,item_count,"Count of item rows, not sum of order_item_id."
+Dashboard_seller_scorecard.csv,sales_rank,"Rank by merchandise sales, descending."
+Dashboard_seller_scorecard.csv,marketplace_sales_share,Seller merchandise sales divided by all delivered merchandise sales.
+data_profile_row_counts.csv,table,Table from the question's defined population and grain.
+data_profile_row_counts.csv,source_rows,Source rows from the question's defined population and grain.
+E1_seller_ranking.csv,seller_id,Seller identifier; string key.
+E1_seller_ranking.csv,seller_state,Seller state (Brazil UF).
+E1_seller_ranking.csv,merchandise_sales_brl,Sum of item prices in BRL; freight excluded.
+E1_seller_ranking.csv,item_count,"Count of item rows, not sum of order_item_id."
+E1_seller_ranking.csv,delivered_orders,Distinct delivered order IDs attributed to this seller; overlaps across sellers.
+E1_seller_ranking.csv,marketplace_sales_share,Seller merchandise sales divided by all delivered merchandise sales.
+E1_seller_ranking.csv,sales_rank,"Rank by merchandise sales, descending."
+E2_seller_month.csv,seller_id,Seller identifier; string key.
+E2_seller_month.csv,seller_state,Seller state (Brazil UF).
+E2_seller_month.csv,purchase_month,Purchase month from the question's defined population and grain.
+E2_seller_month.csv,merchandise_sales_brl,Sum of item prices in BRL; freight excluded.
+E2_seller_month.csv,delivered_orders,Distinct delivered order IDs attributed to this seller; overlaps across sellers.
+E2_seller_month.csv,previous_month_sales_brl,Previous month sales brl from the question's defined population and grain.
+E2_seller_month.csv,sales_growth,(current - prior month) / prior month; NULL if prior month is absent or zero.
+E2_seller_month.csv,monthly_rank,Monthly rank from the question's defined population and grain.
+E3_state_peer_comparison.csv,seller_id,Seller identifier; string key.
+E3_state_peer_comparison.csv,seller_state,Seller state (Brazil UF).
+E3_state_peer_comparison.csv,merchandise_sales_brl,Sum of item prices in BRL; freight excluded.
+E3_state_peer_comparison.csv,item_count,"Count of item rows, not sum of order_item_id."
+E3_state_peer_comparison.csv,delivered_orders,Distinct delivered order IDs attributed to this seller; overlaps across sellers.
+E3_state_peer_comparison.csv,marketplace_sales_share,Seller merchandise sales divided by all delivered merchandise sales.
+E3_state_peer_comparison.csv,sales_rank,"Rank by merchandise sales, descending."
+E3_state_peer_comparison.csv,peer_seller_count,Peer seller count from the question's defined population and grain.
+E3_state_peer_comparison.csv,state_mean_sales_brl,State mean sales brl from the question's defined population and grain.
+E3_state_peer_comparison.csv,difference_from_state_mean_brl,Difference from state mean brl from the question's defined population and grain.
+E3_state_peer_comparison.csv,comparison_flag,Comparison flag from the question's defined population and grain.
+E4_selected_states.csv,rank,Rank from the question's defined population and grain.
+E4_selected_states.csv,customer_state,Customer state from the question's defined population and grain.
+E4_selected_states.csv,sales_brl,Sales brl from the question's defined population and grain.
+E4_top_customer_markets.csv,seller_id,Seller identifier; string key.
+E4_top_customer_markets.csv,seller_state,Seller state (Brazil UF).
+E4_top_customer_markets.csv,total_sales_brl,Total sales brl from the question's defined population and grain.
+E4_top_customer_markets.csv,selected_state_sales_brl,Selected state sales brl from the question's defined population and grain.
+E4_top_customer_markets.csv,selected_state_share,Selected state share from the question's defined population and grain.
+E4_top_customer_markets.csv,selected_states,Selected states from the question's defined population and grain.
+E5_review_segments.csv,review_segment,Seller segment based on whether valid reviewed seller-orders include low scores.
+E5_review_segments.csv,seller_count,Seller count from the question's defined population and grain.
+E5_review_segments.csv,eligible_orders,Distinct delivered seller-order observations in scope; overlaps where orders have multiple sellers.
+E5_review_segments.csv,valid_review_orders,Seller-order observations with one selected valid review score.
+E5_review_segments.csv,low_rating_orders,Seller-order observations with selected review score 1 or 2.
+E5_seller_review_detail.csv,seller_id,Seller identifier; string key.
+E5_seller_review_detail.csv,seller_state,Seller state (Brazil UF).
+E5_seller_review_detail.csv,eligible_orders,Distinct delivered seller-order observations in scope; overlaps where orders have multiple sellers.
+E5_seller_review_detail.csv,valid_review_orders,Seller-order observations with one selected valid review score.
+E5_seller_review_detail.csv,low_rating_orders,Seller-order observations with selected review score 1 or 2.
+E5_seller_review_detail.csv,review_segment,Seller segment based on whether valid reviewed seller-orders include low scores.
+E6_period_activity.csv,seller_id,Seller identifier; string key.
+E6_period_activity.csv,seller_state,Seller state (Brazil UF).
+E6_period_activity.csv,sales_jan_jun_2017_brl,Sales jan jun 2017 brl from the question's defined population and grain.
+E6_period_activity.csv,sales_jan_jun_2018_brl,Sales jan jun 2018 brl from the question's defined population and grain.
+E6_period_activity.csv,activity_group,Seller sales presence in January-June 2017 versus January-June 2018.
+E7_seller_scorecard.csv,seller_id,Seller identifier; string key.
+E7_seller_scorecard.csv,seller_state,Seller state (Brazil UF).
+E7_seller_scorecard.csv,eligible_orders,Distinct delivered seller-order observations in scope; overlaps where orders have multiple sellers.
+E7_seller_scorecard.csv,sales_brl,Sales brl from the question's defined population and grain.
+E7_seller_scorecard.csv,freight_brl,Freight brl from the question's defined population and grain.
+E7_seller_scorecard.csv,late_orders,Seller-order observations delivered after estimated calendar date.
+E7_seller_scorecard.csv,valid_delivery_date_orders,Seller-order denominator with actual and estimated delivery dates.
+E7_seller_scorecard.csv,valid_review_orders,Seller-order observations with one selected valid review score.
+E7_seller_scorecard.csv,low_rating_orders,Seller-order observations with selected review score 1 or 2.
+E7_seller_scorecard.csv,late_delivery_rate,late_orders / valid_delivery_date_orders.
+E7_seller_scorecard.csv,freight_to_sales_ratio,Sum freight / sum item prices for the same seller-order population.
+E7_seller_scorecard.csv,review_coverage,valid_review_orders / eligible_orders.
+E7_seller_scorecard.csv,low_rating_rate,low_rating_orders / valid_review_orders.
+E7_seller_scorecard.csv,item_count,"Count of item rows, not sum of order_item_id."
+E7_seller_scorecard.csv,sales_rank,"Rank by merchandise sales, descending."
+E7_seller_scorecard.csv,marketplace_sales_share,Seller merchandise sales divided by all delivered merchandise sales.
+G1_delivered_summary.csv,delivered_orders,Distinct delivered order IDs attributed to this seller; overlaps across sellers.
+G1_delivered_summary.csv,distinct_customers,Distinct customers from the question's defined population and grain.
+G1_delivered_summary.csv,merchandise_sales_brl,Sum of item prices in BRL; freight excluded.
+G1_delivered_summary.csv,average_order_value_brl,Average order value brl from the question's defined population and grain.
+G1_delivered_summary.csv,sales_definition,Sales definition from the question's defined population and grain.
+G1_order_status.csv,order_status,Order status from the question's defined population and grain.
+G1_order_status.csv,order_count,Order count from the question's defined population and grain.
+G1_order_status.csv,order_share,Order share from the question's defined population and grain.
+G2_monthly_sales.csv,purchase_month,Purchase month from the question's defined population and grain.
+G2_monthly_sales.csv,merchandise_sales_brl,Sum of item prices in BRL; freight excluded.
+G2_monthly_sales.csv,delivered_orders,Distinct delivered order IDs attributed to this seller; overlaps across sellers.
+G2_monthly_sales.csv,average_order_value_brl,Average order value brl from the question's defined population and grain.
+G2_monthly_sales.csv,previous_sales_brl,Previous sales brl from the question's defined population and grain.
+G2_monthly_sales.csv,sales_growth,(current - prior month) / prior month; NULL if prior month is absent or zero.
+G2_monthly_sales.csv,running_sales_brl,Cumulative monthly merchandise sales from the first month in scope.
+G3_missing_payment_sample.csv,order_id,Order id from the question's defined population and grain.
+G3_missing_payment_sample.csv,purchase_month,Purchase month from the question's defined population and grain.
+G3_missing_payment_sample.csv,missing_record,Missing record from the question's defined population and grain.
+G3_missing_review_sample.csv,order_id,Order id from the question's defined population and grain.
+G3_missing_review_sample.csv,purchase_month,Purchase month from the question's defined population and grain.
+G3_missing_review_sample.csv,missing_record,Missing record from the question's defined population and grain.
+G3_monthly_coverage.csv,purchase_month,Purchase month from the question's defined population and grain.
+G3_monthly_coverage.csv,delivered_orders,Distinct delivered order IDs attributed to this seller; overlaps across sellers.
+G3_monthly_coverage.csv,valid_review_orders,Seller-order observations with one selected valid review score.
+G3_monthly_coverage.csv,payment_orders,Payment orders from the question's defined population and grain.
+G3_monthly_coverage.csv,missing_review_orders,Missing review orders from the question's defined population and grain.
+G3_monthly_coverage.csv,review_coverage,valid_review_orders / eligible_orders.
+G3_monthly_coverage.csv,missing_payment_orders,Missing payment orders from the question's defined population and grain.
+G3_monthly_coverage.csv,payment_coverage,Payment coverage from the question's defined population and grain.
+O1_seller_portfolio.csv,seller_id,Seller identifier; string key.
+O1_seller_portfolio.csv,category_count,Category count from the question's defined population and grain.
+O1_seller_portfolio.csv,sales_brl,Sales brl from the question's defined population and grain.
+O1_seller_portfolio.csv,top_category_sales_brl,Top category sales brl from the question's defined population and grain.
+O1_seller_portfolio.csv,top_category_share,Seller sales from largest category / total seller sales.
+O1_seller_portfolio.csv,seller_state,Seller state (Brazil UF).
+O1_seller_portfolio.csv,sales_rank,"Rank by merchandise sales, descending."
+O1_seller_portfolio.csv,portfolio_breadth_quartile,Portfolio breadth quartile from the question's defined population and grain.
+O2_customer_concentration.csv,seller_id,Seller identifier; string key.
+O2_customer_concentration.csv,total_sales_brl,Total sales brl from the question's defined population and grain.
+O2_customer_concentration.csv,distinct_customers,Distinct customers from the question's defined population and grain.
+O2_customer_concentration.csv,top_five_customer_sales_brl,Top five customer sales brl from the question's defined population and grain.
+O2_customer_concentration.csv,top_five_customer_share,Seller sales from five largest unique customers / total seller sales.
+O2_customer_concentration.csv,seller_state,Seller state (Brazil UF).
+O2_customer_concentration.csv,sales_rank,"Rank by merchandise sales, descending."
